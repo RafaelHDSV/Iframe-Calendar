@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+/*   font-family: "Nanum Myeongjo", serif; */
+
+:root {
+	--black: #0f0f0f;
+	--gray: #413e3e;
+	--light_gray: #c5c5c5;
+	--red: #cf2a2a;
+	--white: #fcfcfc;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100vh;
+}
+
+table {
+	border: solid 1px var(--black);
+	border-collapse: collapse;
+	user-select: none;
+}
+
+td {
+	border: solid 1px var(--black);
+	width: 3rem;
+	height: 3rem;
+	font-family: 'Nanum Myeongjo', serif;
+	text-align: center;
+}
+
+tr:first-child td {
+	font-size: 2rem;
+	text-transform: uppercase;
+}
+
+tr:nth-child(1),
+tr:nth-child(2) {
+	background-color: var(--gray);
+	color: var(--light_gray);
+	font-weight: bold;
+}
+
+.month_out {
+	background-color: var(--light_gray);
+	color: var(--gray);
+	transition: 0.3s all ease;
+	cursor: pointer;
+}
+
+.month_out:hover {
+	background-color: var(--red);
+	color: var(--white);
+}
+
+img {
+	width: 5.87rem;
+	height: 5.71rem;
+}
